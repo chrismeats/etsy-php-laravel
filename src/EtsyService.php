@@ -7,6 +7,7 @@ use Gentor\OAuth1Etsy\Client\Server\Etsy;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use Illuminate\Session\SessionManager;
 use Illuminate\Session\Store;
+use Illuminate\Foundation\Application;
 
 /**
  * Class EtsyService
