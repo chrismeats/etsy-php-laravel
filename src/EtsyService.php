@@ -25,10 +25,10 @@ class EtsyService
 
     /**
      * EtsyService constructor.
-     * @param SessionManager $session
+     * @param \Illuminate\Foundation\Application $app
      * @param array $config
      */
-    public function __construct(SessionManager $session, array $config)
+    public function __construct(Application $app, array $config)
     {
         $this->session = $session;
 
