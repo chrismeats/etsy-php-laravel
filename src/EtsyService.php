@@ -31,7 +31,7 @@ class EtsyService
      */
     public function __construct(Application $app, array $config)
     {
-        $this->session = $session;
+        $this->session = new SessionManager($app);
 
         $this->server = new Etsy([
             'identifier' => $config['consumer_key'],
