@@ -562,10 +562,10 @@ class EtsyApi
                 array(
                     'method' => $method,
                     'args' => array(
-                        'data' => @$validArguments['_valid'],
-                        'params' => @$args[0]['params'],
-                        'associations' => @$args[0]['associations'],
-                        'fields' => @$args[0]['fields']
+                        'data' => $validArguments['_valid'] ?? '',
+                        'params' => $args[0]['params'] ?? '',
+                        'associations' => $args[0]['associations'] ?? '',
+                        'fields' => $args[0]['fields'] ?? ''
                     )
                 )));
         } else {
