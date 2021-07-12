@@ -367,6 +367,9 @@ class EtsyApi
             }
         }
 
+        if (!empty($params) && $method == "GET") {
+            $url .= "&" . http_build_query($params);
+        }
         try {
             $response = $this->client->request($method, $url, $options);
         } catch (BadResponseException $e) {
